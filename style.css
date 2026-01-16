@@ -208,10 +208,17 @@ body { font-family: 'Inter', sans-serif; color: var(--text); line-height: 1.7; o
     width: 100%;         /* Roztáhne span, aby text-align fungoval správně */
     line-height: 1.4;    /* Zlepší čitelnost, pokud je text na více řádků */
 }
-.foto-box:hover img { transform: scale(1.1); }
-.foto-box:hover .foto-overlay { opacity: 1; }
-.foto-box:hover .foto-overlay span { transform: translateY(0); }
-
+@media (hover: hover) {
+    .foto-box:hover img { 
+        transform: scale(1.1); 
+    }
+    .foto-box:hover .foto-overlay { 
+        opacity: 1; 
+    }
+    .foto-box:hover .foto-overlay span { 
+        transform: translateY(0); 
+    }
+}
 /* Oprava Lightboxu - jednotná velikost */
 .sl-wrapper .sl-image img {
     max-height: 85vh !important;
