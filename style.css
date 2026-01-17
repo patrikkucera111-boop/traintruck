@@ -42,7 +42,7 @@ body { font-family: 'Inter', sans-serif; color: var(--text); line-height: 1.7; o
     height: 100%; width: auto;
     display: flex; align-items: center; justify-content: center;
 }
-.logo-ikona img { height: 100%; width: auto; object-fit: contain; }
+.logo-ikona img { height: 70%; width: auto; object-fit: contain; border-radius: 10%;}
 
 .logo-text { display: flex; flex-direction: column; line-height: 1; justify-content: center; }
 .logo-text .hlavni { font-weight: 900; font-size: 1.6rem; color: var(--tmava); letter-spacing: -0.5px; }
@@ -511,4 +511,5 @@ body { font-family: 'Inter', sans-serif; color: var(--text); line-height: 1.7; o
 
 .mapa-nahled:hover .mapa-overlay {
     opacity: 1;
+
 }
