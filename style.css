@@ -170,7 +170,7 @@ body { font-family: 'Inter', sans-serif; color: var(--text); line-height: 1.7; o
 .vstupní-skupina label { display: block; margin-bottom: 8px; font-weight: 700; }
 .vstupní-skupina input { width: 100%; padding: 12px; border: 2px solid #eee; border-radius: 8px; font-size: 1.1rem; }
 .vysledek { margin-top: 30px; padding-top: 20px; border-top: 2px solid #f4f4f4; text-align: center; }
-#cena-vysledek { font-size: 3rem; font-weight: 900; color: var(--primarni); font-family: 'Cinzel', serif; }
+#cena-vysledek { font-size: 3rem; font-weight: 900; color: var(--primarni); font-family: 'Cinzel', serif; word-wrap: break-word;}
 
 
 
@@ -513,3 +513,4 @@ body { font-family: 'Inter', sans-serif; color: var(--text); line-height: 1.7; o
     opacity: 1;
 
 }
+
