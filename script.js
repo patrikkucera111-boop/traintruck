@@ -67,27 +67,34 @@ document.addEventListener('DOMContentLoaded', () => {
     if (plochaInput && dnyInput && vysledekSpan) {
 
         function vypocitejCenu() {
-            const plocha = parseFloat(plochaInput.value) || 0;
-            const dny = parseFloat(dnyInput.value) || 0;
-            
-            // Logika cenotvorby (převzato z tvé sekce "CENA PRO PLOCHU")
-            
-            // 1. ZÁKLADNÍ SAZBA: 15 Kč / m² / den
-            let sazbaDen = 15;
+    let plocha = parseFloat(plochaInput.value) || 0;
+    let dny = parseFloat(dnyInput.value) || 0;
+    
+    // Ochrana proti záporným hodnotám
+    plocha = Math.abs(plocha);
+    dny = Math.abs(dny);
 
-            // 2. MNOŽSTEVNÍ SLEVA: Pokud je plocha > 100 m², cena 12 Kč
-            if (plocha > 100) sazbaDen = 12;
+    // LOGIKA PRO "INDIVIDUÁLNĚ" (bez Kč)
+    if (plocha > 500 || dny > 365) {
+        vysledekSpan.innerText = "Individuálně"; // Tady Kč nepřidáme
+        vysledekSpan.style.color = "#2c3e50"; 
+        return; 
+    } 
 
-            const cenaSkladne = plocha * dny * sazbaDen;
+    // Reset stylu
+    vysledekSpan.style.color = ""; 
 
-            // 3. MANIPULACE: 80 Kč / m² (jednorázově)
-            const cenaManipulace = plocha * 80; 
+    // VÝPOČET CENY
+    let sazbaDen = 10;
+    if (plocha > 100) sazbaDen = 18;
 
-            const total = cenaSkladne + cenaManipulace;
+    const cenaSkladne = plocha * dny * sazbaDen;
+    const cenaManipulace = plocha * 80; 
+    const total = cenaSkladne + cenaManipulace;
 
-            // Výpis do HTML s formátováním (např. 1 500)
-            vysledekSpan.innerText = total.toLocaleString('cs-CZ');
-        }
+    // VÝPIS CENY (Zde přidáme " Kč" programově)
+    vysledekSpan.innerText = total.toLocaleString('cs-CZ') + " Kč";
+}
 
         // Listenery - reagují na změnu
         plochaInput.addEventListener('input', vypocitejCenu);
