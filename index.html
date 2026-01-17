@@ -239,21 +239,21 @@
 
 
 
-  <section id="kalkulacka" class="sekce sedy-vzhled">
+ <section id="kalkulacka" class="sekce sedy-vzhled">
         <div class="kontejner">
             <h2 class="nadpis-sekce">Orientační kalkulačka</h2>
             <div class="kalkulacka-box anim-skrol">
                 <div class="vstupní-skupina">
                     <label>Plocha (m²):</label>
-                    <input type="number" id="plocha" value="10" min="1">
+                    <input type="number" id="plocha" value="10" min="1" max="5000">
                 </div>
                 <div class="vstupní-skupina">
                     <label>Počet dní:</label>
-                    <input type="number" id="dny" value="30" min="1">
+                    <input type="number" id="dny" value="30" min="1" max="1000">
                 </div>
                 <div class="vysledek">
-                    <p>Odhadovaná cena:</p>
-                    <span id="cena-vysledek">0</span> Kč
+    <p>Odhadovaná cena:</p>
+    <span id="cena-vysledek">0 Kč</span> </div>
                 </div>
             </div>
             <p class="cenik-poznamka">* Uvedené ceny jsou orientační. Pro přesnou kalkulaci využijte náš formulář. Nejsme plátci DPH.</p>
@@ -340,6 +340,7 @@
 </body>
 
 </html>
+
 
 
 
