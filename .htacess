@@ -1,0 +1,17 @@
+<IfModule mod_expires.c>
+  ExpiresActive On
+  
+  # Obrázky cache na 1 rok
+  ExpiresByType image/jpg "access plus 1 year"
+  ExpiresByType image/jpeg "access plus 1 year"
+  ExpiresByType image/gif "access plus 1 year"
+  ExpiresByType image/png "access plus 1 year"
+  ExpiresByType image/webp "access plus 1 year"
+  
+  # CSS a JS na 1 měsíc
+  ExpiresByType text/css "access plus 1 month"
+  ExpiresByType application/javascript "access plus 1 month"
+  
+  # Ikonky a fonty
+  ExpiresByType font/woff2 "access plus 1 year"
+</IfModule>
