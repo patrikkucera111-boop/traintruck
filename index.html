@@ -268,7 +268,7 @@
 
   
 
-  <footer id="kontakt" class="paticka">
+<footer id="kontakt" class="paticka">
     <div class="kontejner">
         <div class="paticka-grid">
             
@@ -276,25 +276,26 @@
                 <div class="logo-footer">Train&Truck <span>Logistic</span></div>
                 
                 <div class="adresa-box">
-    <div class="adresa-text">
-        <p><i class="fa-solid fa-location-dot"></i> Matyášova 2215, 560 02 Česká Třebová</p>
-        <p><i class="fa-solid fa-envelope"></i> <a href="mailto:sklad@traintruck.cz">sklad@traintruck.cz</a></p>
-    </div>
-    
-    <a href="https://mapy.cz/zakladni?q=Matyášova+2215,+560+02+Česká+Třebová" target="_blank" class="mapa-nahled" title="Otevřít navigaci">
-        <iframe 
-            src="https://maps.google.com/maps?q=Matyášova+2215,+560+02+Česká+Třebová&t=&z=15&ie=UTF8&iwloc=&output=embed" 
-            allowfullscreen="" 
-            loading="lazy" 
-            frameborder="0">
-        </iframe>
-        <div class="mapa-overlay">
-            <span><i class="fa-solid fa-location-arrow"></i> Navigovat</span>
-        </div>
-    </a>
-</div>
+                    <div class="adresa-text">
+                        <p><i class="fa-solid fa-location-dot"></i> Matyášova 2215, 560 02 Česká Třebová</p>
+                        <p><i class="fa-solid fa-envelope"></i> <a href="mailto:sklad@traintruck.cz">sklad@traintruck.cz</a></p>
+                    </div>
+                    
+                    <a href="https://mapy.cz/zakladni?q=Matyášova+2215,+560+02+Česká+Třebová" target="_blank" class="mapa-nahled" title="Otevřít navigaci">
+                        <iframe 
+                            src="https://maps.google.com/maps?q=Matyášova+2215,+560+02+Česká+Třebová&t=&z=15&ie=UTF8&iwloc=&output=embed" 
+                            allowfullscreen="" 
+                            loading="lazy" 
+                            frameborder="0">
+                        </iframe>
+                        <div class="mapa-overlay">
+                            <span><i class="fa-solid fa-location-arrow"></i> Navigovat</span>
+                        </div>
+                    </a>
+                </div>
 
                 <div class="tym-grid">
+                    
                     <div class="osoba-box">
                         <h4 class="role">Sklad & Správa</h4>
                         <div class="jmeno">Jakub Trávník</div>
@@ -303,37 +304,45 @@
                     </div>
 
                     <div class="osoba-box">
-                        <h4 class="role">Sklad & Správa / ÚKLID</h4>
+                        <h4 class="role">Sklad & Správa</h4>
                         <div class="jmeno">Patrik Kučera</div>
-                        <div class="ico">&#127760; <a href="https://uklid-levou-zadni.cz/" target="_blank">Úklid levou zadní</a></div>
                         <a href="tel:+420731467558" class="telefon">+420 731 467 558</a>
                         <div class="ico">IČO: 17970679</div>
+                        
+                        <div class="ico" style="margin-top: 5px;" data-nosnippet>
+                            <i class="fa-solid fa-globe"></i> <a href="https://uklid-levou-zadni.cz/" target="_blank" style="text-decoration: underline;">Úklid levou zadní</a>
+                        </div>
                     </div>
 
                     <div class="osoba-box span-full">
-                        <h4 class="role">Marketing & Fakturace / ÚKLID</h4>
+                        <h4 class="role">Marketing & Fakturace</h4>
                         <div class="jmeno">Romana Kučerová</div>
-                        <div class="ico">&#127760; <a href="https://uklid-levou-zadni.cz/" target="_blank">Úklid levou zadní</a></div>
                         <a href="tel:+420731467647" class="telefon">+420 731 467 647</a>
                         <div class="ico">IČO: 23906383</div>
-                        
-                    </div>
-                </div>
-            </div> <div class="kontakt-container">
-                <form id="kontaktni-formular" class="formular anim-skrol" action="https://formspree.io/f/xojvgblq" method="POST">
-                    
-                    <input type="hidden" name="_subject" value="Nová poptávka z webu">
 
+                        <div class="ico" style="margin-top: 5px;" data-nosnippet>
+                            <i class="fa-solid fa-globe"></i> <a href="https://uklid-levou-zadni.cz/" target="_blank" style="text-decoration: underline;">Úklid levou zadní</a>
+                        </div>
+                    </div>
+
+                </div>
+            </div>
+            
+            <div class="kontakt-container">
+                <form id="kontaktni-formular" class="formular anim-skrol" action="https://formspree.io/f/xojvgblq" method="POST">
+                    <input type="hidden" name="_subject" value="Nová poptávka z webu">
                     <input type="text" name="jmeno" placeholder="Jméno a příjmení" required>
                     <input type="email" name="email" placeholder="E-mailová adresa" required>
                     <textarea name="zprava" placeholder="Vaše poptávka (např. m² plochy, typ zboží...)" required></textarea>
-                    
                     <button type="submit" id="tlacitko-odeslat" class="tlacitko">Odeslat</button>
-                    
                     <div id="stav-odeslani"></div>
                 </form>
-            </div> </div> <div class="copyright">
-            &copy; 2026 Train&Truck Logistic. Všechna práva vyhrazena.<br>Pro Train&Truck vytvořil <a href="https://www.jangalba.eu" target="_blank">Jan Galba</a>
+            </div>
+        
+        </div>
+
+        <div class="copyright">
+            © 2026 Train&Truck Logistic s.r.o. Všechna práva vyhrazena.<br>Pro Train&Truck vytvořil <a href="https://www.jangalba.eu" target="_blank">Jan Galba</a>
         </div>
     </div>
 </footer>
@@ -343,6 +352,7 @@
 </body>
 
 </html>
+
 
 
 
