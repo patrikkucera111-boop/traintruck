@@ -112,7 +112,7 @@ body { font-family: 'Inter', sans-serif; color: var(--text); line-height: 1.7; o
     inset: 0; /* Roztáhne se přes celý rodičovský prvek */
     
     /* Tady se děje kouzlo - čím vyšší číslo, tím větší rozmazání */
-    backdrop-filter: blur(4px); 
+    backdrop-filter: blur(3px); 
     -webkit-backdrop-filter: blur(20px); /* Pro Safari */
     
     /* Volitelné: jemné ztmavení, aby to nevypadalo moc "vyšisovaně" */
